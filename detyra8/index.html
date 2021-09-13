@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World</title>
+    <link href="960_12_col.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Patua+One&display=swap" rel="stylesheet">
+    <style>
+        *,
+         ::before,
+         ::after {
+            box-sizing: border-box;
+        }
+        
+         :root {
+            background-color: rgb(241, 242, 243);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .img-fluid {
+            max-width: 100%;
+        }
+        
+        h1 {
+            text-shadow: 2px 2px 8px #b6abab;
+            font-family: 'Patua One', cursive;
+            font-weight: normal;
+        }
+        
+        button {
+            padding: 15px 7px;
+            border: 1px solid rgb(43, 43, 43);
+            background-color: rgb(182, 190, 199);
+            border-radius: 7px;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+        }
+        
+        .btn:hover {
+            background-color: rgb(208, 212, 221);
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="container_12">
+
+            <div class="grid_3 push_5 alpha omega">
+                <h1>World's map</h1>
+            </div>
+            <div class="grid_11 alpha omega push_2">
+                <p>Here are the world's most visited countries, click above shaded rectangres to see more...</p>
+            </div>
+            <div class="grid_11 img-fluid push_2 alpha omega" style="margin-top:50px; ">
+                <img src="foto/world.png" style="border: 1px solid rgb(26, 24, 24);" usemap="#map">
+                <map name="map">
+                    <area shape="rect" coords="42, 108, 107 ,154" href="china.html">
+                    <area shape="rect" coords="139, 240,189,320" href="paris.html">
+                    <area shape="rect" coords="273,54,330,103" href="paris.html">
+                    <area shape="rect" coords="442,64,551,171" href="china.html">
+                    <area shape="rect" coords="322,236,362,277" href="paris.html">
+                    <area shape="rect" coords="514,215,621,295" href="china.html">
+                </map>
+            </div>
+            <!-- <div class="grid_5 push_4">
+                <p>Lorem ipsum, dolor sit am, molestiae amet totam voluptas explicab. Magni veritatis soluta dolorum voluptas repudiandae facere delectus!</p>
+            </div> -->
+
+            <div class="grid_8 push_4" style="margin-top: 18px;">
+                <div class="grid_3 alpha omega" style="margin-right: -10px;">
+                    <button class="btn">Explore more</button>
+                </div>
+                <div class="grid_3 alpha omega">
+                    <button class="btn">World's map</button>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</body>
+
+</html>
